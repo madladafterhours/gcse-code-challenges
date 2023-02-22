@@ -24,10 +24,7 @@ def password():
             continue
 
         score = len(pw)/5
-        lcs = 0
-        ucs = 0
-        dgs = 0
-        scs = 0
+        lcs, ucs, dgs, scs = 0, 0, 0, 0
         for char in pw:
             if char.isdigit():
                 dgs +=1
